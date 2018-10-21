@@ -215,8 +215,8 @@ public class GUI {
         series2 = new XYSeries("p(x)");
         series3 = new XYSeries("InterpolatePoints");
         for (int i = 0; i < (b-a+2)*10; i ++) {
-            series1.add((a + i - 10) / 10, function.calculate((a + i - 10) / 10));
-            series2.add((a + i - 10) / 10, iFunc.calculate((a + i - 10) / 10));
+            series1.add((a*10 + i - 10) / 10, function.calculate((a*10 + i - 10) / 10));
+            series2.add((a*10 + i - 10) / 10, iFunc.calculate((a*10 + i - 10) / 10));
         }
 
         for (int i = a; i < b; i ++) {
